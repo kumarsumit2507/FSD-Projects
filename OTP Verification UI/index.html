@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/05dfcbe16d.js" crossorigin="anonymous"></script>
+</head>
+
+<body class=" flex justify-center items-center bg-orange-400  h-screen ">
+    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+        <div
+            class="user-icon justify-self-center-safe mb-5 text-black w-[70px] h-[70px] rounded-[50%] outline-[2px] outline-solid outline-white shadow-[0px_0px_15px_5px_rgba(167,155,155,0.7)] text-[40px]">
+            <i class="fa-solid fa-user"></i>
+        </div>
+        <h2 class="font-bold mb-3">Enter the OTP</h2>
+        <p class="text-sm mb-4">We have sent an OTP to your mobile Phone.</p>
+        <input type="text" placeholder="Enter Your OTP" id="otp"
+            class="border border-grey-400 rounded-lg w-full p-2 text-center">
+        <p id="error" class="text-red-500 mt-2 hidden ">Invalid OTP!</p>
+        <button onclick="verifyOTP()" class="bg-green-600 text-white p-2 mt-5 rounded-lg w-auto cursor-pointer">Verify
+            OTP</button>
+        <div class="flex align-end">
+            <button id="resendBtn" onclick="resendOTP()"
+                class=" text-[12px] cursor-pointer text-blue-500 underline disabled-50 disabled:cursor-not-allowed">Resend
+                OTP</button>
+            <p id="timer" class="text-grey-500 text-xs hidden">You can resend OTP in <span id="countdown">30</span> </p>
+        </div>
+    </div>
+</body>
+<script>
+    function verifyOTP() {
+        const otp = document.getElementById("otp").value;
+        const error = document.getElementById("error")
+        if (/^\d{6}$/.test(otp)) {
+            alert("OTP verified successfully");
+            error.classList.add("hidden");
+        } else {
+            error.classList.remove("hidden");
+        }
+    }
+    function resendOTP() {
+        const resendBtn = document.getElementById("resendBtn");
+        const timer = document.getElementById("timer");
+        const countdown = document.getElementById("countdown");
+        alert("A New OTP has been sent...");
+        timer.classList.remove("hidden")
+
+        resendBtn.disabled = true;
+
+        let timeleft = 30;
+        const interval = setInterval(() => {
+            timeleft--;
+            countdown.textContent = timeleft;
+            if (timeleft === 0) {
+                clearInterval(interval);
+
+                resendBtn.disabled = false;
+                timer.classList.add("hidden");
+            }
+        }, 1000);
+    }
+
+    document.getElementById("otp").addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+            verifyOTP();
+        }
+    });
+</script>
+
+</html>
