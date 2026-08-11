@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drift Ride Beyond
+        The Ordinary. | Electric Bicycles</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="../Practice/style.css">
+
+    <link rel="icon" href="img/RSE.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+        style="color: whitesmoke;">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <!-- <style>
+
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.slides {
+    position: relative;
+
+    min-height: 100svh;
+
+    display: flex;
+
+    align-items: center;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.9s ease, opacity 0.9s ease;
+}
+
+/* Active Slide */
+.slide.active {
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 2;
+}
+
+/* Previous slide moves left */
+.slide.exit-left {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+/* Previous slide moves right */
+.slide.exit-right {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 0 8%;
+    max-width: 700px;
+}
+
+.content h1 {
+    font-size: clamp(2rem, 5vw, 4.5rem);
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.content a {
+    display: inline-block;
+    text-decoration: none;
+    color: #111;
+    background: #fff;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+
+    width: 48px;
+    height: 48px;
+
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    color: #fff;
+    background: rgba(255,255,255,.25);
+
+    font-size: 1.8rem;
+
+    backdrop-filter: blur(5px);
+}
+
+.nav.prev {
+    left: 20px;
+}
+
+.nav.next {
+    right: 20px;
+}
+
+.dots {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 10px;
+
+    z-index: 20;
+}
+
+.dots button {
+    width: 12px;
+    height: 12px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.5);
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.dots button.active {
+    background: #fff;
+    transform: scale(1.2);
+}
+
+@media(max-width:768px){
+
+    .hero-slider{
+        height:70vh;
+    }
+
+    .content{
+        padding:0 6%;
+    }
+
+    .nav{
+        width:40px;
+        height:40px;
+        font-size:1.4rem;
+    }
+}
+
+    </style> -->
+</head>
+
+<body>
+    <!--     Part 1
+
+✔ Header
+
+✔ Navigation
+
+✔ Hero Section
+
+Part 2
+
+✔ About
+
+✔ Product Cards
+
+Part 3
+
+✔ Testimonials
+
+✔ Featured News
+
+Part 4
+
+✔ Footer
+
+✔ Bottom Navigation
+
+✔ Responsive Media Queries  -->
+    <header class="header">
+
+        <div class="container">
+
+            <nav class="header__nav">
+
+                <a href="#" class="header__logo">
+                    Drift
+                </a>
+
+                <ul class="header__menu">
+
+                    <li class="header__item">
+                        <a href="#" class="header__link">Work</a>
+                    </li>
+
+                    <li class="header__item">
+                        <a href="#" class="header__link">About</a>
+                    </li>
+
+                    <li class="header__item">
+                        <a href="#" class="header__link">News</a>
+                    </li>
+
+                    <li class="header__item">
+                        <a href="#" class="header__link">Thinking</a>
+                    </li>
+
+                    <li class="header__item">
+                        <a href="#" class="header__link">Pledge</a>
+                    </li>
+
+                    <li class="header__item">
+                        <a href="#" class="header__link">Careers</a>
+                    </li>
+
+                    <li class="header__item">
+                        <a href="#" class="header__link">Contact</a>
+                    </li>
+
+                </ul>
+
+                <button class="header__toggle">
+
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+
+                </button>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- <section class="hero">
+
+
+        <div class="hero__overlay"></div>
+
+        <div class="container">
+
+            <div class="hero__content">
+
+                <h1 class="hero__title">
+                    Ride Beyond
+                    <span>The Ordinary.</span>
+                </h1>
+
+                <p class="hero__text">
+                    High-performance electric bicycles designed for modern riders,
+                    adventure seekers, and city explorers.
+                </p>
+
+                <a href="#" class="btn">
+                    Explore Collection
+                </a>
+
+            </div>
+
+        </div>
+    </section> -->
+    <div class="hero-slider" id="heroSlider">
+        <div class="slides">
+            <section class="slide active" style="background-image:url('../BiCycle/img/img-4.jpg')">
+                <div class="overlay"></div>
+                <div class="content">
+                    <h1>Electric Bikes</h1>
+                    <p>Modern, fast, and eco-friendly rides.</p>
+                    <a href="#" class="hero-btn">Shop Now</a>
+                </div>
+            </section>
+
+            <section class="slide" style="background-image:url('../BiCycle/img/img-9.jpg')">
+                <div class="overlay"></div>
+                <div class="content">
+                    <h1>Ride Beyond
+                        <span>The Ordinary.</span>
+                    </h1>
+                    <p>High-performance electric bicycles designed for modern riders,
+                        adventure seekers, and city explorers.</p>
+                    <a href="#" class="hero-btn">Explore Collection</a>
+                </div>
+
+
+
+            </section>
+
+            <section class="slide" style="background-image:url('../BiCycle/img/img-9.jpg')">
+                <div class="overlay"></div>
+                <div class="content">
+                    <h1>City Commuter</h1>
+                    <p>Perfect for smooth daily travel.</p>
+                    <a href="#" class="hero-btn">Explore</a>
+                </div>
+            </section>
+
+            <section class="slide" style="background-image:url('../BiCycle/img/img-7.jpg')">
+                <div class="overlay"></div>
+                <div class="content">
+                    <h1>Mountain E-Bike</h1>
+                    <p>Built for power and adventure.</p>
+                    <a href="#" class="hero-btn">View More</a>
+                </div>
+            </section>
+        </div>
+
+        <button class="nav prev" id="prevBtn">‹</button>
+        <button class="nav next" id="nextBtn">›</button>
+
+        <div class="dots" id="dots"></div>
+    </div>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about">
+
+        <div class="container">
+
+            <div class="about__grid">
+
+                <div class="about__content">
+
+                    <h2 class="about__title">
+                        Built for riders,
+                        <span>Designed for adventure.</span>
+                    </h2>
+
+                    <p class="about__text">
+                        Every Drift bicycle is engineered for performance,
+                        comfort, and modern design. Whether you're commuting
+                        through the city or exploring mountain trails,
+                        Drift keeps every ride smooth.
+                    </p>
+
+                    <a href="#" class="btn btn-sec">
+                        See the Work
+                    </a>
+
+                </div>
+
+                <div class="about__logo">
+
+                    Drift
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <section class="product">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <h2 class="section-title">
+                    Featured
+                    <span>Bikes</span>
+                </h2>
+
+            </div>
+
+
+            <div class="product__grid">
+
+
+                <article class="product__card">
+
+                    <div class="product__image product__image--one"></div>
+
+                    <div class="product__content">
+
+                        <h3 class="product__title">
+                            Mountain X
+                        </h3>
+
+                        <p class="product__text">
+
+                            Lightweight electric mountain bike built
+                            for every adventure.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="product__card">
+
+                    <div class="product__image product__image--two"></div>
+
+                    <div class="product__content">
+
+                        <h3 class="product__title">
+                            Urban Ride
+                        </h3>
+
+                        <p class="product__text">
+
+                            Elegant city bicycle designed for daily commuters.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="product__card">
+
+                    <div class="product__image product__image--three"></div>
+
+                    <div class="product__content">
+
+                        <h3 class="product__title">
+                            Explorer Pro
+                        </h3>
+
+                        <p class="product__text">
+
+                            Powerful electric bicycle with premium comfort.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= TESTIMONIAL ================= -->
+
+    <section class="testimonial">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <h2 class="section-title">
+                    Featured
+                    <span>Engagements</span>
+                </h2>
+
+            </div>
+
+            <div class="testimonial__slider">
+
+                <article class="testimonial__card">
+
+                    <h3 class="testimonial__company">
+                        Google
+                    </h3>
+
+                    <div class="testimonial__stars">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <p class="testimonial__text">
+
+                        Drift completely transformed our product
+                        experience. Every interaction feels
+                        premium and effortless.
+
+                    </p>
+
+                    <span class="testimonial__author">
+
+                        UX Director
+
+                    </span>
+
+                </article>
+
+
+
+                <article class="testimonial__card">
+
+                    <h3 class="testimonial__company">
+
+                        Apple
+
+                    </h3>
+
+                    <div class="testimonial__stars">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <p class="testimonial__text">
+
+                        Beautiful work, outstanding communication
+                        and attention to detail.
+
+                    </p>
+
+                    <span class="testimonial__author">
+
+                        Product Team
+
+                    </span>
+
+                </article>
+
+
+
+                <article class="testimonial__card">
+
+                    <h3 class="testimonial__company">
+
+                        Microsoft
+
+                    </h3>
+
+                    <div class="testimonial__stars">
+
+                        ⭐⭐⭐⭐⭐
+
+                    </div>
+
+                    <p class="testimonial__text">
+
+                        Their design language perfectly matches
+                        our brand identity.
+
+                    </p>
+
+                    <span class="testimonial__author">
+
+                        Creative Head
+
+                    </span>
+
+                </article>
+
+                <article class="testimonial__card">
+
+                    <h3 class="testimonial__company">
+
+                        Microsoft
+
+                    </h3>
+
+                    <div class="testimonial__stars">
+
+                        ⭐⭐⭐⭐⭐
+
+                    </div>
+
+                    <p class="testimonial__text">
+
+                        Their design language perfectly matches
+                        our brand identity.
+
+                    </p>
+
+                    <span class="testimonial__author">
+
+                        Creative Head
+
+                    </span>
+
+                </article>
+
+                <article class="testimonial__card">
+
+                    <h3 class="testimonial__company">
+
+                        Microsoft
+
+                    </h3>
+
+                    <div class="testimonial__stars">
+
+                        ⭐⭐⭐⭐⭐
+
+                    </div>
+
+                    <p class="testimonial__text">
+
+                        Their design language perfectly matches
+                        our brand identity.
+
+                    </p>
+
+                    <span class="testimonial__author">
+
+                        Creative Head
+
+                    </span>
+
+                </article>
+
+                <article class="testimonial__card">
+
+                    <h3 class="testimonial__company">
+
+                        Microsoft
+
+                    </h3>
+
+                    <div class="testimonial__stars">
+
+                        ⭐⭐⭐⭐⭐
+
+                    </div>
+
+                    <p class="testimonial__text">
+
+                        Their design language perfectly matches
+                        our brand identity.
+
+                    </p>
+
+                    <span class="testimonial__author">
+
+                        Creative Head
+
+                    </span>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= STORY ================= -->
+
+    <section class="story">
+
+        <div class="container">
+
+            <div class="story__grid">
+
+                <div class="story__content">
+
+                    <h2 class="section-title">
+
+                        Drift
+
+                        <span>Helps Human</span>
+
+                        <span>Connect With</span>
+
+                        <span>Adventure.</span>
+
+                    </h2>
+
+                </div>
+
+                <div class="story__image">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FEATURED NEWS ================= -->
+
+    <section class="news">
+
+        <div class="container">
+
+            <div class="news__header">
+
+                <h2 class="section-title">
+
+                    Featured
+
+                    <span>News</span>
+
+                </h2>
+
+                <a href="#" class="btn btn-sec">
+
+                    View All
+
+                </a>
+
+            </div>
+
+
+
+            <article class="news__card">
+
+                <img src="img/img-5.jpg" class="news__image" alt="">
+
+
+                <div class="news__content">
+
+                    <h3 class="news__title">
+
+                        BASIC® earns twelve Webby nominations.
+
+                    </h3>
+
+                    <span class="news__date">
+
+                        Awards • 04.05.22
+
+                    </span>
+
+                </div>
+
+                <span class="material-symbols-outlined news__icon">
+
+                    arrow_forward
+
+                </span>
+
+            </article>
+
+
+
+            <article class="news__card">
+
+                <img src="img/img-6.jpg" class="news__image" alt="">
+
+
+                <div class="news__content">
+
+                    <h3 class="news__title">
+
+                        Modern bicycle design trends in 2026.
+
+                    </h3>
+
+                    <span class="news__date">
+
+                        Insights • 07.08.26
+
+                    </span>
+
+                </div>
+
+                <span class="material-symbols-outlined news__icon">
+
+                    arrow_forward
+
+                </span>
+
+            </article>
+
+            <article class="news__card">
+
+                <img src="img/img-4.jpg" class="news__image" alt="">
+
+
+                <div class="news__content">
+
+                    <h3 class="news__title">
+
+                        Modern bicycle design trends in 2026.
+
+                    </h3>
+
+                    <span class="news__date">
+
+                        Insights • 07.08.26
+
+                    </span>
+
+                </div>
+
+                <span class="material-symbols-outlined news__icon">
+
+                    arrow_forward
+
+                </span>
+
+            </article>
+
+            <article class="news__card">
+
+                <img src="img/img-5.jpg" class="news__image" alt="">
+
+
+                <div class="news__content">
+
+                    <h3 class="news__title">
+
+                        Modern bicycle design trends in 2026.
+
+                    </h3>
+
+                    <span class="news__date">
+
+                        Insights • 07.08.26
+
+                    </span>
+
+                </div>
+
+                <span class="material-symbols-outlined news__icon">
+
+                    arrow_forward
+
+                </span>
+
+            </article>
+
+            <article class="news__card">
+
+                <img src="img/img-7.jpg" class="news__image" alt="">
+
+
+                <div class="news__content">
+
+                    <h3 class="news__title">
+
+                        Modern bicycle design trends in 2026.
+
+                    </h3>
+
+                    <span class="news__date">
+
+                        Insights • 07.08.26
+
+                    </span>
+
+                </div>
+
+                <span class="material-symbols-outlined news__icon">
+
+                    arrow_forward
+
+                </span>
+
+            </article>
+
+            <article class="news__card">
+
+                <img src="img/img-8.jpg" class="news__image" alt="">
+
+
+                <div class="news__content">
+
+                    <h3 class="news__title">
+
+                        Modern bicycle design trends in 2026.
+
+                    </h3>
+
+                    <span class="news__date">
+
+                        Insights • 07.08.26
+
+                    </span>
+
+                </div>
+
+                <span class="material-symbols-outlined news__icon">
+
+                    arrow_forward
+
+                </span>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer__top">
+
+                <div class="footer__brand">
+
+                    <h2 class="footer__logo">
+                        Drift
+                    </h2>
+
+                </div>
+
+                <div class="footer__content">
+
+                    <p class="footer__text">
+
+                        We create premium riding experiences through
+                        modern electric bicycles engineered for every
+                        adventure.
+
+                    </p>
+
+                    <a href="mailto:hello@drift.com" class="footer__mail">
+
+                        hello@drift.com
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer__bottom">
+
+                <a href="#" class="footer__link">
+
+                    <span class="footer__dot"></span>
+
+                    Stay In The Know
+
+                </a>
+
+                <a href="#" class="footer__link">
+
+                    <span class="footer__dot"></span>
+
+                    Social
+
+                </a>
+
+                <a href="#" class="footer__link">
+
+                    <span class="footer__dot"></span>
+
+                    Initiatives
+
+                </a>
+
+                <a href="#" class="footer__link">
+
+                    <span class="footer__dot"></span>
+
+                    Offices
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <script src="../BiCycle/script2.js"></script>
+    <script src="../Practice/script.js"></script>
+    <!-- <script>
+
+    const slider = document.getElementById("heroSlider");
+const slides = [...document.querySelectorAll(".slide")];
+const dotsWrap = document.getElementById("dots");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+const interval = 4000;
+const transitionTime = 900;
+
+let current = 0;
+let timer;
+
+// Create Dots
+slides.forEach((_, index) => {
+
+    const dot = document.createElement("button");
+
+    if(index === 0){
+        dot.classList.add("active");
+    }
+
+    dot.addEventListener("click", ()=>{
+
+        if(index > current){
+            goToSlide(index,"next");
+        }else if(index < current){
+            goToSlide(index,"prev");
+        }
+
+    });
+
+    dotsWrap.appendChild(dot);
+
+});
+
+const dots = [...dotsWrap.children];
+
+// Update Dots
+function updateDots(){
+
+    dots.forEach((dot,index)=>{
+
+        dot.classList.toggle("active",index===current);
+
+    });
+
+}
+
+// Main Function
+function goToSlide(index,direction){
+
+    if(index===current) return;
+
+    const previous = current;
+
+    current = (index + slides.length) % slides.length;
+
+    slides[previous].classList.remove("active");
+
+    if(direction==="next"){
+        slides[previous].classList.add("exit-left");
+    }else{
+        slides[previous].classList.add("exit-right");
+    }
+
+    slides[current].classList.remove("exit-left","exit-right");
+    slides[current].classList.add("active");
+
+    setTimeout(()=>{
+
+        slides[previous].classList.remove("exit-left","exit-right");
+
+    },transitionTime);
+
+    updateDots();
+    restartAutoplay();
+
+}
+
+// Next
+function nextSlide(){
+
+    goToSlide(current+1,"next");
+
+}
+
+// Previous
+function prevSlide(){
+
+    goToSlide(current-1,"prev");
+
+}
+
+// Autoplay
+function startAutoplay(){
+
+    clearInterval(timer);
+
+    timer = setInterval(nextSlide,interval);
+
+}
+
+function restartAutoplay(){
+
+    startAutoplay();
+
+}
+
+// Events
+nextBtn.addEventListener("click",nextSlide);
+
+prevBtn.addEventListener("click",prevSlide);
+
+slider.addEventListener("mouseenter",()=>{
+
+    clearInterval(timer);
+
+});
+
+slider.addEventListener("mouseleave",()=>{
+
+    startAutoplay();
+
+});
+
+// Start
+startAutoplay();
+</script> -->
+</body>
+
+</html>
