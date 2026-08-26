@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const menuBtn = document.querySelector(".header__toggle");
     const menu = document.querySelector(".header__menu");
 
-    if(menuBtn && menu){
+    if (menuBtn && menu) {
 
         menuBtn.addEventListener("click", () => {
 
@@ -19,13 +19,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const slider = document.querySelector(".testimonial__slider");
 
-    if(slider){
+    if (slider) {
 
         let isDown = false;
         let startX;
         let scrollLeft;
 
-        slider.addEventListener("mousedown",(e)=>{
+        slider.addEventListener("mousedown", (e) => {
 
             isDown = true;
 
@@ -35,21 +35,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
         });
 
-        slider.addEventListener("mouseleave",()=>{
+        slider.addEventListener("mouseleave", () => {
 
             isDown = false;
 
         });
 
-        slider.addEventListener("mouseup",()=>{
+        slider.addEventListener("mouseup", () => {
 
             isDown = false;
 
         });
 
-        slider.addEventListener("mousemove",(e)=>{
+        slider.addEventListener("mousemove", (e) => {
 
-            if(!isDown) return;
+            if (!isDown) return;
 
             e.preventDefault();
 
