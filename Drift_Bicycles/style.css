@@ -51,7 +51,7 @@ header {
     flex-direction: column;
     position: relative;
     overflow: hidden;
-    background-image: url('../BiCycle/img/img-9.jpg');
+    background-image: url('img/img-9.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -163,15 +163,15 @@ header {
 
 
 .Product-image-1 {
-    background-image: url('../BiCycle/img/img-1.jpg');
+    background-image: url('img/img-1.jpg');
 }
 
 .Product-image-2 {
-    background-image: url('../BiCycle/img/img-2.jpg');
+    background-image: url('img/img-2.jpg');
 }
 
 .Product-image-3 {
-    background-image: url('../BiCycle/img/img-3.jpg');
+    background-image: url('img/img-3.jpg');
 }
 
 
@@ -200,7 +200,7 @@ header {
 }
 
 .testimonial-img{
-    background-image: url('../BiCycle/img/img-1.jpg');
+    background-image: url('img/img-1.jpg');
     height: 60em;
     background-size: cover;
     background-position: center;
