@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Quiz Time</title>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: burlywood;
+            color: navy;
+        }
+
+        .parent__container {
+            background-color: cadetblue;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .quiz__card {
+            background-color: #fff;
+            width: 600px;
+            padding: 1.5rem;
+            border-radius: 30px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        .quiz__top {
+            padding: 1rem 0;
+            border-bottom: 2px solid rgb(176, 173, 173);
+        }
+
+        .pri__heading {
+            font-size: 3em;
+            font-weight: 800;
+        }
+
+        .sec__heading {
+            margin-top: 0.5rem;
+            font-size: 2em;
+        }
+
+
+        .ans__btn {
+            width: 100%;
+            padding: 1rem;
+            margin: 0.5rem auto;
+            border-radius: 5px;
+            border: 1px solid;
+            outline: none;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .ans__btn:hover:not([disabled]) {
+            background-color: black;
+            color: #fff;
+        }
+
+        .ans__btn:disabled{
+            cursor: no-drop;
+        }
+
+        #next__btn {
+            display: none;
+            color: #fff;
+            font-size: 1.5rem;
+            background-color: cadetblue;
+            margin: 1rem auto;
+            padding: 0.5rem 2rem;
+            border-radius: 5px;
+            border: 1px solid;
+            cursor: pointer;
+        }
+
+         .correct{
+            background-color: rgb(76, 250, 76);
+            color: white;
+        }
+
+        .incorrect{
+            background-color: rgb(242, 63, 63);
+            color: white;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="parent__container">
+        <div class="quiz__card">
+            <div class="quiz__top">
+                <h1 class="pri__heading">
+                    Quiz Name
+                </h1>
+            </div>
+            <div id="quiz_que">
+                <h2 class="sec__heading" id="question">
+                    sample que
+                </h2>
+                <div id="answer__button">
+                    
+                </div>
+                <button id="next__btn">
+                    Next
+                </button>
+            </div>
+        </div>
+    </div>
+
+<script src="./script.js"></script>
+</body>
+
+</html>
