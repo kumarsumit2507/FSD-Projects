@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ad45fc;
+    --secondary-color: #7f7fe2;
+    --text-color: #ffffff;
+    --note-bg: #ffffff;
+    --note-text: #222222;
+}
+
+/* ---------------- BODY ---------------- */
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(130deg, var(--primary-color), var(--secondary-color));
+    color: var(--text-color);
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+
+/* ---------------- MAIN CONTAINER ---------------- */
+
+.parent_container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+
+/* ---------------- HEADER ---------------- */
+
+.card_top {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0.5rem;
+}
+
+.addNotes_Logo {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.pri_heading {
+    font-size: 3rem;
+}
+
+
+/* ---------------- BUTTON ---------------- */
+
+.card_button {
+    padding: 0 0.5rem;
+}
+
+.pri_btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    min-height: 3rem;
+    padding: 0 1.5rem;
+
+    border: none;
+    outline: none;
+    border-radius: 30px;
+
+    background-color: #ffffff;
+    color: #222222;
+
+    font-size: 1.25rem;
+    font-family: Georgia, "Times New Roman", Times, serif;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.pri_btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.pri_btn:active {
+    transform: scale(0.98);
+}
+
+
+/* ---------------- NOTES CONTAINER ---------------- */
+
+.notes_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 0 0.5rem;
+}
+
+
+/* ---------------- NOTE CARD ---------------- */
+
+.input_box {
+    position: relative;
+
+    width: 300px;
+    min-height: 200px;
+
+    padding: 1rem;
+    padding-bottom: 3.5rem;
+
+    border: none;
+    border-radius: 20px;
+    outline: none;
+
+    background-color: var(--note-bg);
+    color: var(--note-text);
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+    transition: 0.2s ease;
+}
+
+.input_box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ---------------- NOTE TEXT ---------------- */
+
+.note_text {
+    width: 100%;
+    min-height: 140px;
+
+    outline: none;
+    border: none;
+
+    color: var(--note-text);
+
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1rem;
+    line-height: 1.5;
+
+    overflow-wrap: break-word;
+}
+
+
+/* ---------------- DELETE ICON ---------------- */
+
+.notes_container span {
+    position: absolute;
+
+    right: 10px;
+    bottom: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    color: #222222;
+
+    cursor: pointer;
+    user-select: none;
+
+    transition: 0.2s ease;
+}
+
+.notes_container span:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.1);
+}
+
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 768px) {
+
+    .parent_container {
+        padding: 1.5rem;
+    }
+
+    .pri_heading {
+        font-size: 2.5rem;
+    }
+
+    .notes_container {
+        justify-content: center;
+    }
+
+    .input_box {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .parent_container {
+        padding: 1rem;
+    }
+
+    .card_top {
+        padding: 0.5rem 0;
+    }
+
+    .addNotes_Logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .pri_heading {
+        font-size: 2rem;
+    }
+
+    .pri_btn {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    .card_button {
+        padding: 0;
+    }
+
+    .notes_container {
+        padding: 0;
+    }
+
+    .input_box {
+        max-width: 100%;
+    }
+}
