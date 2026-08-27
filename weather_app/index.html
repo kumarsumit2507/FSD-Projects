@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="../weather_app/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" id="weather_input" placeholder="Enter City Name" spellcheck="false">
+            <div class="search__btn">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </div>
+            <div class="error">
+                <p>
+                    Invalid City Name
+                </p>
+            </div>
+        </div>
+
+        <div class="weather">
+            <img src="images/rain.png" alt="weather-icon" class="weather-icon">
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">Goa</h2>
+            <h3 class="feels"></h3>
+
+
+            <div class="details">
+
+                <div class="col">
+                    <img src="images/humidity.png" alt="">
+                    <div class="descp">
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/wind.png" alt="">
+                    <div class="descp">
+                        <p class="wind">50 Km/Hr</p>
+                        <p>wind</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../weather_app/script.js"></script>
+</body>
+
+</html>
