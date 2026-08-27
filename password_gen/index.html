@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="card">
+        <div class="card_top">
+            <span>
+                <h1 class="pri_heading">Generate a</h1>
+            </span>
+            <span>
+                <h1 class="pri_heading">Random Password</h1>
+            </span>
+        </div>
+
+        <div class="card_main">
+            <div class="pass_input">
+                <input type="text" placeholder="Password" id="Password">
+                <span class="material-symbols-outlined" onclick="copyPassword()">
+                    content_copy
+                </span>
+            </div>
+
+            <button class="gen_btn" onclick="createPassword()">
+                <span class="material-symbols-outlined">
+                    bolt
+                </span> Generate Password
+            </button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
